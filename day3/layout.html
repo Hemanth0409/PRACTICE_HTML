@@ -9,146 +9,106 @@
     <title>FLY.com</title>
 
     <style>
-        div.top {
-            width: 100%;
-            margin: -5px;
-            height: 25px;
+        #margin {
+            width: 140px;
         }
         
-        header,
-        footer {
+        #header {
             padding: 0.5px;
             height: 55px;
-            color: white;
-            background: #c2e59c;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #64b3f4, #c2e59c);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             text-align: center;
         }
         
         .horinav {
             color: #00d2ff;
-            background: #c2e59c;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #64b3f4, #c2e59c);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             text-align: right;
+            background: #000000;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #050239, #000000);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #03020f, #071e4d);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             font-size: x-small;
+            padding: 50px;
+            margin-top: -5px;
         }
         
         .horinav li {
             display: inline-block;
             font-size: 20px;
-            padding: 0px;
+            padding: 1px;
             margin-right: 2px;
         }
         
         .horinav li a {
-            color: rgba(242, 243, 243, 0.72);
-            background-color: rgba(16, 179, 205, 0.955);
-            border-radius: 10px;
-            padding: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(12, 181, 207, 0.955);
+            border-radius: 8px;
+            padding: 8px;
             text-decoration: none;
         }
         
-        #banner {
-            margin-top: 40px;
-            width: 1300px;
-            max-width: 60%;
-        }
-        
-        .horinavside {
-            margin-top: 40px;
-            max-width: 40%;
-            padding-right: 200px;
-            padding-left: 70px;
-            display: inline-block;
-            padding-bottom: 70px;
-            background-color: #26afebb8;
-            padding-top: 70px;
-        }
-        
-        #id {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        
-        #mail {
-            font-size: 30px;
-            margin-left: 10px;
-            background-color: #64b3f4;
-            border-radius: 10px;
-            position: relative;
-        }
-        
-        #box {
-            width: 300px;
-            height: 28px;
-            margin: 10px;
-            border-radius: 20px;
-            padding-left: 10px;
-            background-color: #ecf1f4;
-            position: relative;
-        }
-        
-        .slo {
-            color: rgb(52 211 153);
-            background-color: black;
-            background: #00C9FF;
-            background: -webkit-linear-gradient(to right, #4f8554, #00C9FF);
-            background: linear-gradient(to right, #3dc4ed, #e0e8eb);
+        .banner {
             position: relative;
             text-align: center;
-            padding: 3px;
-            margin: 5px;
+            display: flex;
+            margin: 90px;
+            display: inline-block;
+            margin-left: 100px;
+        }
+        
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            background-color: rgba(73, 171, 200, 0.955);
+            border-radius: 10px;
+            padding: 10px;
         }
     </style>
 
 </head>
 
-<body>
+<body style="background: #c0c0aa;  
+background: -webkit-linear-gradient(to right, #35d5e1, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #237989, #1071b1); ">
+
     <div class="top">
         <header>
-            <img src="/doc/5313.png_860.png" style="float: left;" width="45px" heigth="10px">
-            <ul class="horinav">
+            <img src="/doc/images.jfif" style="float: left;" height=" 125px ">
+            <ul class="horinav ">
 
 
 
-                <li><a href=" " style="margin-right:40px ">Contact</a></li>
-                <li><a href=" ">sign_in</a></li>
-                <li><a href=" ">profile</a></li>
+                <li><a href=" " style="margin-right:40px "><b>Contact</b></a></li>
+                <li><a href=" "><b>sign_up</b></a></li>
+                <li><a href=" "><b>profile</b></a></li>
                 <li>
-                    <a href=" ">login</a>
+                    <a href=" "><b>login</b></a>
                 </li>
                 <li>
-                    <a href=" " style="margin-right: 5px; ">logout  </a>
+                    <a href=" " style="margin-right: 5px; "><b>logout </b></a>
                 </li>
             </ul>
     </div>
     </header>
-    <div>
-        <img id="banner" src="/doc/download.jpg" style="float: left;">
-        <div class="horinavside">
-            <label id="mail">MAIL</label><br>
-            <input id="box" type="email" name="email" required placeholder="Enter your email to get started"><br>
-            <input style="padding-right: 10px;margin:10px;" type="submit" value="submit">
-
+    <div id="marginid ">
+        <div class="banner ">
+            <img src="/doc/banner.jpg " width="1500px " height="400px "> </div>
+        <div class="center">
+            <label id="email"><b>Sign_in:</b></label><br><br>
+            <input style="width: 190px;height: 30px;border-radius: 10px; color: rgb(0, 0, 0);font-size: 20px;
+            background-color: rgba(199, 234, 240, 0.955) ;padding: 10px;" type="email" name="email" required placeholder="email">
+            <button style="width: 100px;display: inline-block;height: 30px;border-radius: 10px;background: #00c6ff;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2781ee, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #056eee, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            " type=" submit " value="submit ">submit</button>
         </div>
     </div>
-
-    <div class="slo">
-
-        <h1><pre>Just do it 
-                 -fly.com
-            </pre></h1>
-    </div>
-
-
 </body>
 
 </html>
