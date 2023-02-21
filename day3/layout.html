@@ -50,6 +50,10 @@
             margin-left: 100px;
         }
         
+        .banner:hover {
+            opacity: 0.7;
+        }
+        
         .center {
             position: absolute;
             top: 50%;
@@ -61,22 +65,134 @@
             background-color: rgba(73, 171, 200, 0.955);
             border-radius: 10px;
             padding: 10px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: transform;
         }
         
-        #about {
-            color: rgb(255, 255, 255);
-            background-color: rgba(12, 181, 207, 0.955);
-            border-radius: 8px;
-            padding: 8px;
-            text-decoration: none;
-            margin: 40px;
-            padding: 30px;
+        .center:hover {
+            transform: scale(1.1);
+            transition: .4s ease;
+            /* background-color: white;*/
+            box-shadow: 0 0 20px #F32C2c;
         }
         
         #hf1 {
             text-align: center;
             color: #000000;
             padding: 5px;
+        }
+        
+        .about {
+            color: rgb(255, 255, 255);
+            background-color: rgba(12, 181, 207, 0.955);
+            font-size: 25px;
+            text-align: center;
+            width: 1450px;
+            padding-bottom: 20px;
+            margin-top: 10px;
+            display: inline-block;
+            margin-left: 100px;
+            padding-right: 3%;
+            padding-left: 1%;
+        }
+        
+        .about:hover {
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transform: matrix();
+            box-shadow: #000000;
+        }
+        
+        .users {
+            color: rgb(255, 255, 255);
+            background-color: rgba(12, 181, 207, 0.955);
+            margin-top: 80px;
+            font-size: 25px;
+            text-align: center;
+            width: 45%;
+            margin-right: 50px;
+            padding-bottom: 54px;
+            float: right;
+        }
+        
+        .users:hover {
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transform: matrix();
+            box-shadow: #000000;
+        }
+        
+        .Meetings {
+            color: rgb(255, 255, 255);
+            background-color: rgba(12, 181, 207, 0.955);
+            margin-top: 80px;
+            font-size: 25px;
+            text-align: center;
+            width: 45%;
+            padding-bottom: 53px;
+            float: right;
+            margin-bottom: 300px;
+            margin-left: 60px;
+            float: left;
+        }
+        
+        .Meetings:hover {
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transform: matrix();
+        }
+        
+        #fix {
+            position: fixed;
+        }
+        
+        .Agenda {
+            color: rgb(255, 255, 255);
+            background-color: rgba(12, 181, 207, 0.955);
+            font-size: 25px;
+            text-align: center;
+            width: 1450px;
+            padding-bottom: 20px;
+            margin-top: -190px;
+            display: inline-block;
+            margin-left: 90px;
+            padding-right: 3%;
+            padding-left: 1%;
+        }
+        
+        .Agenda:hover {
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transform: matrix();
+            box-shadow: #000000;
+        }
+        
+        #hf1 {
+            text-shadow: 5px;
+            text-align: center;
+            color: #000000;
+            padding: 5px;
+        }
+        
+        footer {
+            display: block;
+            background: -webkit-linear-gradient(to right, #050239, #000000);
+            background: linear-gradient(to right, #03020f, #071e4d);
+            border: 100px;
+            font-size: 30px;
+            padding-bottom: 1px;
+            padding-top: 30px;
+            padding-right: 159px;
+            margin-top: 100px;
+            text-decoration: none;
+        }
+        
+        #bread {
+            text-decoration: none;
+            color: rgb(21, 75, 123);
+            margin-left: 60px;
         }
     </style>
 
@@ -105,29 +221,66 @@ background: linear-gradient(to right, #237989, #1071b1); ">
             </ul>
     </div>
     </header>
-    <div></div>
-    <div class="banner ">
-        <img src="/doc/banner.jpg " width="1500px " height="400px "> </div>
-    <div class="center">
-        <label id="email"><b>Sign_in:</b></label><br><br>
-        <input style="width: 190px;height: 30px;border-radius: 10px; color: rgb(0, 0, 0);font-size: 20px;
+    <div>
+        <div class="banner ">
+            <img src="/doc/banner.jpg " width="1500px " height="400px "> </div>
+        <div class="center">
+            <label id="email"><b>Sign_in:</b></label><br><br>
+            <input style="width: 190px;height: 30px;border-radius: 10px; color: rgb(0, 0, 0);font-size: 20px;
             background-color: rgba(199, 234, 240, 0.955) ;padding: 10px;" type="email" name="email" required placeholder="email">
-        <button style="width: 100px;display: inline-block;height: 30px;border-radius: 10px;background: #00c6ff;  /* fallback for old browsers */
+            <button style="width: 100px;display: inline-block;height: 30px;border-radius: 10px;background: #00c6ff;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #2781ee, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #056eee, #115467); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             " type=" submit " value="submit "><b>submit</b></button>
-    </div>
-    <div id="about" id="margin">
-        <h1 id="hf1">About our Website </h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis ipsa aliquam esse! Odit deserunt dolorem quis minus autem sequi nostrum fugiat pariatur nam incidunt? Quos totam ullam sunt reiciendis placeat expedita. Qui iusto commodi
-            nihil minus unde doloremque eum tenetur quidem, molestiae quam corrupti numquam nostrum a esse enim eius quaerat atque pariatur consequatur? Sed cumque eius nobis, quas quam consequatur quo obcaecati ad harum explicabo vel, nostrum ut.</p>
-    </div>
-    <div style="display: flex;">
-        <div class="comp">
-            <h1><b>COMPUTER</b></h1>
-            <a href="https://www.classcentral.com/subject/cs"><img src="/doc/IMG1.jpg"></a>
+        </div>
+        <div class="about">
+            <h1 id="hf1">About our Website </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas facilis ipsa aliquam esse! Odit deserunt dolorem quis minus autem sequi nostrum fugiat pariatur nam incidunt? Quos totam ullam sunt reiciendis placeat expedita. Qui iusto commodi
+                nihil minus unde doloremque eum tenetur quidem, molestiae quam corrupti numquam nostrum a esse enim eius quaerat atque pariatur consequatur? Sed cumque eius nobis, quas quam consequatur quo obcaecati ad harum explicabo vel, nostrum ut.</p>
+        </div>
+        <div style="display: flex; display: inline-block;">
+            <div class="users">
+                <h3 id="hf1">Users</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae ducimus sint deserunt. Assumenda cum distinctio quae obcaecati soluta velit aperiam laboriosam veniam rem labore totam, eaque pariatur voluptatem vitae! Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Veritatis velit id maiores tenetur molestiae ex repudiandae dolores ratione blanditiis quidem? Iusto officia eius esse voluptate harum, quos non amet beatae.
+                </p>
+            </div>
+            <div class="Meetings">
+                <h3 id="hf1">Meetings</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae ducimus sint deserunt. Assumenda cum distinctio quae obcaecati soluta velit aperiam laboriosam veniam rem labore totam, eaque pariatur voluptatem vitae! Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Veritatis velit id maiores tenetur molestiae ex repudiandae dolores ratione blanditiis quidem? Iusto officia eius esse voluptate harum, quos non amet beatae.
+                </p>
+            </div>
+        </div>
+        <div style="display: flex; display: inline-block;">
+            <div class="Agenda">
+                <h3 id="hf1">Agenda</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae ducimus sint deserunt. Assumenda cum distinctio quae obcaecati soluta velit aperiam laboriosam veniam rem labore totam, eaque pariatur voluptatem vitae! Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Veritatis velit id maiores tenetur molestiae ex repudiandae dolores ratione blanditiis quidem? Iusto officia eius esse voluptate harum, quos non amet beatae.
+                </p>
+            </div>
         </div>
     </div>
+    <footer>
+
+        <div id="bread">
+
+            <a style="color:rgb(255, 246, 246) ;text-decoration: none; " href=" " target="_blank ">Accessibility |</a>
+
+            <a style="color:white ;text-decoration: none;" href=" " target="_blank ">Website Feedback  |</a>
+            <a style="color:white ;text-decoration: none;" href=" " target="_blank ">Disability Services  |</a>
+            <a style="color:white ;text-decoration: none;" href=" " target="_blank ">Directory  |</a>
+            <a style="color:white ;text-decoration: none;" href=" " target="_blank ">Emergency  |</a>
+            <a style="color:white ;text-decoration: none;" href=" " target="_blank ">Consumer Disclosures  |</a>
+            <a style="color:white ;text-decoration: none;" href=" " target="_blank ">Privacy policy </a>
+
+        </div>
+        <br>
+        <div>
+            <hr style="margin-left: 50px;width: 105%;">
+            <h6 style="display: inline-block;color: white;background-color: #00c6ff;text-align: center;border: #000000;border-radius: 6px;padding: 3px;margin-left: 620px; ">©2023 HEMANTH</h6>
+        </div>
+    </footer>
 </body>
 
 </html>
